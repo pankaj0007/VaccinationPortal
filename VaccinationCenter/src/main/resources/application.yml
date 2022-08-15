@@ -16,3 +16,19 @@ spring:
     
   application:
     name: Vaccination-Center
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+        
+      base-path: "/monitor"
+      
+  endpoint:
+    health:
+      show-details: always
+
+
+
